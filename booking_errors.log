@@ -1,0 +1,4 @@
+2026-05-17 18:03:05 | User: 5 | Destinasi: 2 | Error: Unknown column 'kode_booking' in 'field list' | Query: INSERT INTO bookings (user_id, destinasi_id, kode_booking, email_pemesan, nama_pemesan, no_hp, tanggal_kunjungan, jumlah_tiket, total_harga, catatan, status) 
+                VALUES (5, 2, 'NJ-20260517-941A5C', 'jevonpersonalkom@gmail.com', 'Jevon Agnibrata S.', '081217734912', '2026-05-20', 1, 500000, 'adwawdadasd', 'pending')
+2026-05-17 18:03:07 | User: 5 | Destinasi: 2 | Error: Unknown column 'kode_booking' in 'field list' | Query: INSERT INTO bookings (user_id, destinasi_id, kode_booking, email_pemesan, nama_pemesan, no_hp, tanggal_kunjungan, jumlah_tiket, total_harga, catatan, status) 
+                VALUES (5, 2, 'NJ-20260517-BB459E', 'jevonpersonalkom@gmail.com', 'Jevon Agnibrata S.', '081217734912', '2026-05-20', 1, 500000, 'adwawdadasd', 'pending')

@@ -1,0 +1,177 @@
+/* ============================================================
+   STYLE.CSS - Halaman Auth (Login & Register) User
+   Nusantara Journey
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== AUTH PAGE ===== */
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a6b3c 0%, #2d9e6b 50%, #1565c0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.auth-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px 36px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.auth-logo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.logo-icon {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    border-radius: 16px;
+    margin-bottom: 14px;
+}
+
+.auth-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1b5e20;
+    margin-bottom: 4px;
+}
+
+.auth-logo p {
+    color: #888;
+    font-size: 0.88rem;
+}
+
+/* Form */
+.auth-form { width: 100%; }
+
+.form-group { margin-bottom: 18px; }
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    font-size: 0.93rem;
+    outline: none;
+    background: #fafafa;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76,175,80,0.12);
+    background: white;
+}
+
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 4px;
+    font-family: inherit;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76,175,80,0.35);
+}
+
+/* Alert */
+.alert {
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+/* Switch link */
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.88rem;
+    color: #777;
+}
+
+.auth-switch a {
+    color: #2e7d32;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-switch a:hover { text-decoration: underline; }
+
+/* Wave */
+.wave-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wave {
+    width: 100%;
+    display: block;
+    height: 80px;
+}
+
+.wave2 {
+    margin-top: -40px;
+}

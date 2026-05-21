@@ -1,0 +1,94 @@
+/* ============================================================
+   USER.CSS - Halaman Kelola User Admin
+   Nusantara Journey Admin Panel
+   ============================================================ */
+
+/* ===== KARTU TABEL ===== */
+.admin-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fafafa;
+}
+.card-header h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Badge ID user */
+.badge-id {
+    background: #eeeeee;
+    color: #555;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: .8rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/* Info user di tabel */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-avatar-placeholder {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8BC34A, #4CAF50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: .9rem;
+    flex-shrink: 0;
+}
+
+/* Badge count di page header */
+.badge-count {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+/* Baris kosong */
+.empty-row {
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+    padding: 40px !important;
+}
+
+/* Alert */
+.alert {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.alert-sukses, .alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}

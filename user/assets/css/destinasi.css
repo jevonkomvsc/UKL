@@ -1,0 +1,88 @@
+/* ============================================================
+   DESTINASI.CSS - Halaman Kelola Destinasi Admin
+   Nusantara Journey Admin Panel
+   ============================================================ */
+
+/* ===== TABEL DESTINASI ===== */
+.admin-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fafafa;
+}
+.card-header h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 700;
+}
+.badge-count {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+/* Thumbnail gambar di tabel */
+.thumb-img {
+    width: 54px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    display: block;
+    margin: 0 auto;
+}
+.thumb-placeholder {
+    font-size: 1.6rem;
+    width: 54px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* Pesan alert */
+.alert {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.alert-sukses, .alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Baris kosong */
+.empty-row {
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+    padding: 40px !important;
+}
+.empty-row a {
+    color: #4CAF50;
+    font-weight: 600;
+    text-decoration: none;
+}

@@ -1,0 +1,159 @@
+/* ============================================================
+   PROVINSI.CSS - Halaman Daftar Provinsi (User)
+   ============================================================ */
+
+.provinsi-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a6b3c 0%, #2d9e6b 50%, #1565c0 100%);
+    overflow: hidden;
+}
+
+.provinsi-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.provinsi-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.provinsi-hero-content h1 {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.provinsi-hero-content p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.provinsi-section {
+    padding: 50px 40px 80px;
+    background: #f8faf8;
+}
+
+.provinsi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.provinsi-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.provinsi-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.13);
+}
+
+.provinsi-card-img {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.provinsi-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.provinsi-card:hover .provinsi-card-img img {
+    transform: scale(1.06);
+}
+
+.provinsi-card-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.provinsi-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+.provinsi-card-count {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: rgba(249,115,22,0.9);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.provinsi-card-body {
+    padding: 20px 22px 24px;
+}
+
+.provinsi-card-body h3 {
+    font-size: 1.15rem;
+    color: #1b5e20;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.provinsi-card-body p {
+    color: #777;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+
+.btn-provinsi-detail {
+    display: inline-block;
+    color: #f97316;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.btn-provinsi-detail:hover {
+    color: #ea6c0a;
+}
+
+.provinsi-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .provinsi-hero-content h1 { font-size: 1.8rem; }
+    .provinsi-section { padding: 30px 16px 60px; }
+    .provinsi-grid { grid-template-columns: 1fr; }
+}

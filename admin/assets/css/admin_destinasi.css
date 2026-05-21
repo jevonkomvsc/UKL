@@ -1,0 +1,48 @@
+/* ============================================================
+   ADMIN_DESTINASI.CSS - Style tambahan untuk halaman destinasi admin
+   ============================================================ */
+
+.filter-bar {
+    margin-bottom: 20px;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 14px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.filter-form label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.filter-form select {
+    padding: 8px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.filter-form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn-sm.btn-secondary {
+    background: #f5f5f5;
+    color: #666;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

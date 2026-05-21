@@ -1,0 +1,451 @@
+/* ============================================================
+   BOOKING.CSS - Form Booking & Checkout
+   ============================================================ */
+
+.booking-section {
+    padding: 40px 40px 80px;
+    background: #f5f7f2;
+    min-height: calc(100vh - 68px);
+}
+
+.booking-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 30px;
+    align-items: start;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+    align-items: start;
+}
+
+/* FORM */
+.booking-form-wrap {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+}
+
+.booking-form-wrap h1 {
+    font-size: 1.6rem;
+    color: #1b5e20;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.btn-kembali {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #666;
+    font-size: 0.88rem;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+}
+
+.btn-kembali:hover {
+    color: #1b5e20;
+}
+
+.booking-form .form-group {
+    margin-bottom: 18px;
+}
+
+.booking-form .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.booking-form .form-group input,
+.booking-form .form-group textarea,
+.booking-form .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    font-size: 0.93rem;
+    outline: none;
+    background: #fafafa;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.booking-form .form-group input:focus,
+.booking-form .form-group textarea:focus,
+.booking-form .form-group select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76,175,80,0.12);
+    background: white;
+}
+
+.booking-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.required {
+    color: #e53935;
+}
+
+.btn-submit-booking {
+    width: 100%;
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+    font-family: inherit;
+}
+
+.btn-submit-booking:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76,175,80,0.35);
+}
+
+/* SUMMARY */
+.booking-summary {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 80px;
+}
+
+.booking-summary h3 {
+    font-size: 1.1rem;
+    color: #1b5e20;
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.summary-item span {
+    color: #888;
+}
+
+.summary-item strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.summary-divider {
+    height: 2px;
+    background: #f0f0f0;
+    margin: 12px 0;
+}
+
+.summary-total {
+    font-size: 1rem;
+}
+
+.summary-total strong {
+    color: #1b5e20;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.summary-note {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.summary-note small {
+    color: #aaa;
+    font-size: 0.78rem;
+}
+
+/* CHECKOUT DETAIL */
+.checkout-detail {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+}
+
+.checkout-detail h1 {
+    font-size: 1.6rem;
+    color: #1b5e20;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.booking-info-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.booking-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: #f8faf8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.booking-kode {
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1b5e20;
+    background: #e8f5e9;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.booking-status {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.status-paid {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-cancelled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.booking-destinasi {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.booking-destinasi img,
+.booking-img-placeholder {
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.booking-destinasi h3 {
+    font-size: 1.05rem;
+    color: #1b5e20;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.booking-destinasi p {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.booking-details {
+    padding: 14px 18px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.88rem;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: #888;
+}
+
+.detail-row strong {
+    color: #333;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* PAYMENT */
+.checkout-payment {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 80px;
+}
+
+.checkout-payment h3 {
+    font-size: 1.1rem;
+    color: #1b5e20;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.payment-summary {
+    margin-bottom: 24px;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.payment-row span {
+    color: #888;
+}
+
+.payment-divider {
+    height: 2px;
+    background: #f0f0f0;
+    margin: 8px 0;
+}
+
+.payment-total {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.payment-total strong {
+    color: #1b5e20;
+    font-size: 1.25rem;
+}
+
+.payment-methods h4 {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.method-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.method-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.method-icon {
+    font-size: 1.2rem;
+}
+
+.btn-pay-now {
+    width: 100%;
+    background: linear-gradient(135deg, #f97316, #ea6c0a);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+}
+
+.btn-pay-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249,115,22,0.35);
+}
+
+.payment-note {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.payment-note small {
+    color: #aaa;
+    font-size: 0.75rem;
+}
+
+/* Alert */
+.alert {
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+@media (max-width: 900px) {
+    .booking-layout,
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+    .booking-summary,
+    .checkout-payment {
+        position: static;
+    }
+    .booking-section { padding: 24px 20px 60px; }
+    .booking-form-wrap,
+    .checkout-detail { padding: 24px; }
+}
