@@ -45,6 +45,9 @@ if (!isset($halaman_aktif)) $halaman_aktif = 'dashboard';
             <a href="user.php" class="nav-item <?= $halaman_aktif === 'user' ? 'aktif' : '' ?>">
                 <span>Kelola User</span>
             </a>
+            <a href="tiket_terjual.php" class="nav-item <?= $halaman_aktif === 'tiket_terjual' ? 'aktif' : '' ?>">
+                <span>Tiket Terjual</span>
+            </a>
         </nav>
 
         <!-- Logout -->
